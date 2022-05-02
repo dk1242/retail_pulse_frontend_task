@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.pageButton {
+  background: #fff;
+  border: 2px solid #666;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pageButton.active {
+  border: 1px solid #888;
+  color: #888;
+  pointer-events: none;
+}
+
+.prev.disabled,
+.next.disabled {
+  pointer-events: none;
+  box-shadow: none;
+  color: #999;
+}
